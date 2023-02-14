@@ -23,7 +23,7 @@ func ping() {
 
 		defer resp.Body.Close()
 		body, err := ioutil.ReadAll(resp.Body)
-		fmt.Printf("response from %v: %s", PING_URL, string(body))
+		fmt.Printf("response from %v: %s\n", PING_URL, string(body))
 
 		time.Sleep(5 * time.Second)
 	}
